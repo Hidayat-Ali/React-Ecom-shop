@@ -36,12 +36,16 @@ nav{
 .right{
     width: 50%;
     text-align: right;
+    
 }
 .shopping-cart i{
     font-size: 25px;
     display: inline-block;
     color: var(--lightDark);
-   margin-right: 5px;
+    margin-right: 5px; 
+    line-height: 35px;
+    
+    
     
    
 }
@@ -49,13 +53,14 @@ nav{
    background-color: var(--mainColor);
    color: var(--whiteColor);
    border-radius: 50%;
-   line-height: 35px;
+   line-height: 13px;
    text-align: center;
-   width: 35px;
-   height: 35px;
+   width: 12px;
+   height: 12px;
    display: inline-block;
    margin-right: 25px;
    font-size: 12px;
+  
 }
 nav ul{
     list-style: none;
@@ -141,4 +146,67 @@ justify-content: center;
   }
   .cart_details{
     margin-top: 100px;
+  }
+  .cart{
+    display: flex;
+    flex-direction: row;
+    shape-outside: -moz-radial-gradient();
+    width: 100%;
+  }
+  .cart img{
+    border-radius: 5px;
+ 
+  }
+  .cart-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 100px;
+  }
+
+
+  .card-title {
+    margin-right: 20px;
+    font-size: 20px;
+    padding: 12px;
+    justify-content: center;
+  }
+  .product-qty{
+
+    margin: 12px;
+    font-size: medium;
+ 
+  }
+  .fa-plus-circle{
+    font-size: 30px;
+    margin: 12px;
+    color: var(--mainColor)
+  }
+
+  .fa-minus-circle{
+    font-size: 30px;
+    margin: 12px;
+    color: var(--mainColor)
+  }
+  .product-price{
+    font-size: 20px;
+    margin: 12px;
+  }
+  .fa-trash{
+    font-size: 30px;
+    margin: 12px;
+    color: rgba(255, 0, 0, 0.786)
+  }
+  .fa-trash on:hover{
+    color: aqua;
+  }
+
+
+  @media screen and (max-width: 680px) {
+    .cart img{
+        border-radius: 5px;
+        width: 260px;
+        margin-top: 100px;
+     
+      }
   }
