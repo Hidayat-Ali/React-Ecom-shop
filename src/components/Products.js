@@ -18,13 +18,13 @@ const Products = () => {
             key={product.id}
           >
             <div className="cover">
-              <div className="product-image  mx-5">
+              <div className=" mx-5">
                 <img src={product.image} alt="not found" />
               </div>
               <div className="card-body  text-center">
                 <p className="h2 "> {product.name} </p>
                 <span className="text-muted"> $ {product.price}</span>
-                <div className="cart mt-5">
+                <div className=" mt-5">
                   <button
                     className="btn btn-lg add_to_cart"
                     onClick={() =>
